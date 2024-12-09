@@ -115,10 +115,16 @@ main section {
 
 @media (max-width: 768px) {
   main {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "mbti"
+      "like-food"
+      "hate-food"
+      "movie"
+      "music "
+      "introduce"
+      "hobby";
   }
 
   #music iframe {
