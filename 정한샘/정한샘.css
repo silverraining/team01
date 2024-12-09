@@ -24,11 +24,7 @@ h3 {
 .card {
   display: flex;
   width: 860px;
-<<<<<<< HEAD
   height: 400px;
-=======
-  /* height: 400px; */
->>>>>>> 870f06902f81e1925fc3bf7de4692a06ceca85af
   border-radius: 10px;
   box-shadow: 0 2px 10px 2px rgb(0 0 0 / 15%);
   padding: 10px 30px 10px 10px;
@@ -61,21 +57,13 @@ h3 {
   border: none;
 }
 
-<<<<<<< HEAD
-.img-container a i {
-=======
 .img-container a > i {
->>>>>>> 870f06902f81e1925fc3bf7de4692a06ceca85af
   font-size: 40px;
   color: rgb(30 58 138);
   cursor: pointer;
 }
 
-<<<<<<< HEAD
-.img-container a i:hover {
-=======
 .img-container a > i:hover {
->>>>>>> 870f06902f81e1925fc3bf7de4692a06ceca85af
   color: rgb(82, 123, 236);
 }
 
@@ -107,24 +95,10 @@ h3 {
 .detail-container .element {
   display: flex;
   align-items: center;
-<<<<<<< HEAD
-  /* position: relative; */
-=======
->>>>>>> 870f06902f81e1925fc3bf7de4692a06ceca85af
   height: 30px;
   font-size: 14px;
 }
 
-<<<<<<< HEAD
-.detail-container .element i {
-  font-size: 14px;
-  width: 20px;
-  /* margin: 0 8px 0 0; */
-  color: rgb(30 58 138 / 0.74);
-}
-
-.detail-container .element h4 {
-=======
 .detail-container .element > i {
   font-size: 14px;
   width: 26px;
@@ -132,7 +106,6 @@ h3 {
 }
 
 .detail-container .element > h4 {
->>>>>>> 870f06902f81e1925fc3bf7de4692a06ceca85af
   width: 150px;
   font-size: 14px;
   font-weight: 400;
@@ -144,10 +117,6 @@ h3 {
   position: relative;
 }
 
-<<<<<<< HEAD
-.skills {
-  display: flex;
-=======
 .detail-container .element > p > i {
   font-size: 12px;
   padding: 4px;
@@ -166,7 +135,6 @@ h3 {
 .skills {
   display: flex;
   margin: 0 0 20px 0;
->>>>>>> 870f06902f81e1925fc3bf7de4692a06ceca85af
 }
 
 .skills .skill {
