@@ -18,7 +18,7 @@ const emberSettings = {
 // Adjust canvas size on resize
 window.addEventListener("resize", () => {
   canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+  canvas.height = 250;
 });
 
 // Ember particle class
