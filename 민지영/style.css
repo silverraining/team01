@@ -69,8 +69,12 @@ main section {
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-/* 각 섹션에 grid-area 이름 지정 */
+
 #mbti {
   grid-area: mbti;
 }
@@ -86,6 +90,7 @@ main section {
   grid-area: movie;
 }
 #movie img {
+  width: auto;
   height: 315px;
 }
 
@@ -103,4 +108,22 @@ main section {
 
 #hobby {
   grid-area: hobby;
+}
+
+@media (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  #music iframe {
+    width: 100%;
+  }
+
+  #movie img {
+    width: 100%;
+    height: auto;
+  }
 }
