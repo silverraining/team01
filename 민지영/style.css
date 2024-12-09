@@ -1,0 +1,132 @@
+@import "./reset.css";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pretendard Variable", Pretendard, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9fafb;
+  color: #333;
+}
+
+.landing {
+  width: 100%;
+  height: 250px;
+
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1;
+  text-align: center;
+
+  background: linear-gradient(135deg, #87ceeb, #4682b4);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.landing span {
+  display: inline;
+  font-weight: 700;
+}
+
+main {
+  display: grid;
+  width: 100%;
+  max-width: 1200px;
+  grid-template-columns: repeat(3, 1fr); /* 3 열 */
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas:
+    "mbti like-food hate-food"
+    "movie  music music "
+    "movie  music music "
+    "introduce introduce hobby";
+  gap: 20px;
+  padding: 20px;
+
+  text-align: center;
+}
+
+main h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+main p {
+  font-size: 1rem;
+}
+
+main section {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#mbti {
+  grid-area: mbti;
+}
+
+#music {
+  grid-area: music;
+}
+#music iframe {
+  width: 100%;
+}
+
+#movie {
+  grid-area: movie;
+}
+#movie img {
+  width: auto;
+  height: 315px;
+}
+
+#like-food {
+  grid-area: like-food;
+}
+
+#hate-food {
+  grid-area: hate-food;
+}
+
+#introduce {
+  grid-area: introduce;
+}
+
+#hobby {
+  grid-area: hobby;
+}
+
+@media (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  #music iframe {
+    width: 100%;
+  }
+
+  #movie img {
+    width: 100%;
+    height: auto;
+  }
+}
