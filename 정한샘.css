@@ -24,7 +24,7 @@ h3 {
 .card {
   display: flex;
   width: 860px;
-  height: 400px;
+  /* height: 400px; */
   border-radius: 10px;
   box-shadow: 0 2px 10px 2px rgb(0 0 0 / 15%);
   padding: 10px 30px 10px 10px;
@@ -57,13 +57,13 @@ h3 {
   border: none;
 }
 
-.img-container a i {
+.img-container a > i {
   font-size: 40px;
   color: rgb(30 58 138);
   cursor: pointer;
 }
 
-.img-container a i:hover {
+.img-container a > i:hover {
   color: rgb(82, 123, 236);
 }
 
@@ -95,19 +95,17 @@ h3 {
 .detail-container .element {
   display: flex;
   align-items: center;
-  /* position: relative; */
   height: 30px;
   font-size: 14px;
 }
 
-.detail-container .element i {
+.detail-container .element > i {
   font-size: 14px;
-  width: 20px;
-  /* margin: 0 8px 0 0; */
+  width: 26px;
   color: rgb(30 58 138 / 0.74);
 }
 
-.detail-container .element h4 {
+.detail-container .element > h4 {
   width: 150px;
   font-size: 14px;
   font-weight: 400;
@@ -119,8 +117,24 @@ h3 {
   position: relative;
 }
 
+.detail-container .element > p > i {
+  font-size: 12px;
+  padding: 4px;
+  color: rgb(55 65 81);
+}
+
+.detail-container .element > p > a {
+  text-decoration: none;
+  color: rgb(55 65 81);
+}
+
+.detail-container .element > p > a:hover {
+  text-decoration: underline;
+}
+
 .skills {
   display: flex;
+  margin: 0 0 20px 0;
 }
 
 .skills .skill {
