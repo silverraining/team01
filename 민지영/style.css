@@ -21,14 +21,33 @@ body {
   height: 250px;
 
   font-size: 2.5rem;
-  font-weight: bold;
-
+  font-weight: 300;
+  line-height: 1;
   text-align: center;
+
   background: linear-gradient(135deg, #87ceeb, #4682b4);
   color: white;
+
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+
+  position: absolute; /* absolute로 위치 설정 */
+  top: 0;
+  left: 0;
+}
+.landing span {
+  display: inline;
+  font-weight: 700;
+}
+
+#embersCanvas {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  z-index: 999;
 }
 
 main {
@@ -36,7 +55,7 @@ main {
   width: 100%;
   max-width: 1200px;
   grid-template-columns: repeat(3, 1fr); /* 3 열 */
-  grid-template-rows: 150px 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
   grid-template-areas:
     "mbti like-food hate-food"
     "movie  music music "
@@ -44,6 +63,8 @@ main {
     "introduce introduce hobby";
   gap: 20px;
   padding: 20px;
+
+  text-align: center;
 }
 
 main h1 {
@@ -61,8 +82,13 @@ main section {
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-/* 각 섹션에 grid-area 이름 지정 */
+
 #mbti {
   grid-area: mbti;
 }
@@ -78,6 +104,7 @@ main section {
   grid-area: movie;
 }
 #movie img {
+  width: auto;
   height: 315px;
 }
 
@@ -95,4 +122,28 @@ main section {
 
 #hobby {
   grid-area: hobby;
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "mbti"
+      "like-food"
+      "hate-food"
+      "movie"
+      "music "
+      "introduce"
+      "hobby";
+  }
+
+  #music iframe {
+    width: 100%;
+  }
+
+  #movie img {
+    width: 100%;
+    height: auto;
+  }
 }
