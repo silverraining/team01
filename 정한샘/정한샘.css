@@ -31,15 +31,7 @@ h3 {
   border-radius: 10px;
   border: 2px solid rgba(255, 255, 255, .2);
   backdrop-filter: blur(20px);
-  /* background: transparent; */
   background-color: rgb(252 255 255 / 0.4);
-  /* box-shadow: 0 2px 10px 2px rgb(0 0 0 / 15%); */
-  /* box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
-              15px 15px 15px rgba(0, 0, 0, 0.1); */
-  /* box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
-              15px 15px 15px rgba(0, 0, 0, 0.1),
-              inset -5px -5px 5px rgba(255, 255, 255, 0.2),
-              inset 5px 5px 5px rgba(0, 0, 0, 0.1); */
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1),
               inset 5px 5px 5px rgba(0, 0, 0, 0.1);
   padding: 10px 30px 10px 10px;
@@ -135,6 +127,7 @@ h3 {
 
 .detail-container {
   flex: 2 1 0%;
+  display: none;
 }
 
 .detail-container > p {
