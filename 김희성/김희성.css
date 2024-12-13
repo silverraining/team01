@@ -12,7 +12,7 @@ body {
   line-height: 1.5;
   margin: 0;
   padding: 0;
-  
+
 }
 
 header {
@@ -24,7 +24,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #CFE5FF;
+  background-color: #a6caf5;
 }
 
 .headertitle {
@@ -39,8 +39,8 @@ header {
   border-radius: 3rem;
   font-size: 1.5rem;
   font-weight: 400;
-  color: black;
-  background-color: #3692FF;
+  color: #404040;
+  background-color: #daecf5;
   text-align: center;
   white-space: nowrap;
   text-decoration: none;
