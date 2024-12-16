@@ -156,6 +156,7 @@ main {
 #liked-music iframe {
   width: 100%;
   height: auto;
+  aspect-ratio: 16 / 9; /* 16:9 비율 */
 }
 #introduce {
   grid-area: introduce;
@@ -166,14 +167,11 @@ main {
 
 .panels {
   text-align: center;
-
   padding: 4rem;
   border-radius: 1rem;
-
   background: linear-gradient(to right, #b07157, #b93d3e),
     url("img/noise-50.avif");
   background-blend-mode: overlay;
-
   display: flex;
   flex-direction: column;
   align-items: center;
