@@ -30,7 +30,7 @@ body {
 .header {
   text-align: center;
   padding: 4rem 2rem;
-  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+  background: linear-gradient(45deg, #000000, #380075);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   margin-bottom: 3rem;
 }
