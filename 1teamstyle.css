@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
 
 * {
   margin: 0;
@@ -30,7 +30,11 @@ body {
 .header {
   text-align: center;
   padding: 4rem 2rem;
+<<<<<<< HEAD
   background: linear-gradient(45deg, #000000, #380075);
+=======
+  /* background: linear-gradient(45deg, #ff6b6b, #4ecdc4); */
+>>>>>>> cef445c612f1ee40b4ab5eb5e7776243b1ee7a43
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   margin-bottom: 3rem;
 }
