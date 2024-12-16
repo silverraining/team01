@@ -159,6 +159,7 @@ BirthdayBox.addEventListener("mouseout", function (e) {
     if(BirthdayClickOX){
         BirthdayBox.classList.remove('name-txt-hide')
         BirthdayBox.style.removeProperty('cursor')
+        console.log('제대로 작동');
     }
 });    
 
