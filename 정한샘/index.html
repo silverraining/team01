@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="정한샘.css">
+  <title>정한샘 자기소개</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" />
 </head>
 <body>
   <main>
-    <div class="card">
+    <div class="card active">
       <div class="img-container">
-        <img src="seha_profile_200x200.png">
+        <img class="img-btn" src="./assets/seha_profile_200x200.png">
         <h2 class="name">정한샘</h2>
         <div class="job">Fullstack Developer</div>
         <div class="links">
@@ -25,7 +26,7 @@
           </a>
         </div>
       </div>
-      <div class="detail-container">
+      <div class="detail-container hidden">
         <h3>About Me</h3>
         <p>
           JavaScript 기반 기술들을 습득하고 
@@ -80,5 +81,15 @@
       </div>
     </div>
   </main>
+
+  <script>
+    const imgBtn = document.querySelector(".img-btn");
+    const card = document.querySelector(".card");
+    const detail = document.querySelector(".detail-container");
+    imgBtn.addEventListener("click", () => {
+      card.classList.toggle("active");
+      detail.classList.toggle("hidden");
+    });
+  </script>
 </body>
 </html>
