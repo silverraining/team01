@@ -31,6 +31,7 @@ if (heart) {
 
 
 // 스크롤 30px 이상 시 박스 표시
+//스크롤 위치가 30px 이상일 경우 scroll-box 요소의 display 속성을 block으로 설정하고, 그렇지 않으면 none으로 설정
 window.addEventListener("scroll", function () {
   const scrollBox = document.getElementById("scroll-box");
   if (scrollBox) {
