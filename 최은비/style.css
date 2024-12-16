@@ -1,39 +1,44 @@
-
 body {
-  background-color:  #87ceeb;
-  color: #003366; 
+  background: linear-gradient(to bottom, #ffffff, #87ceeb); /* 흰색에서 하늘색으로 그라데이션 */
+  color: #003366;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-
 .container {
-  max-width: 800px;
-  margin: 50px auto;
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 20px;
-  background: white;
-  opacity: 0.8;
-  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .profile {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.profile-picture {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  text-align: center; 
+  margin: 20px;
 }
 
 .name {
   font-size: 2em;
   color: #2e4a62;
-  text-shadow: 1px 1px 2px #87ceeb; 
+  text-shadow: 1px 1px 2px #87ceeb;
+  margin-bottom: 10px;
+  display: inline; /* '최은비'를 한 줄로 보이게 설정 */
 }
 
+.introduction-text {
+  font-size: 2em;
+  color: #2e4a62;
+  text-shadow: 1px 1px 2px #87ceeb;
+  margin-left: 10px; /* '자기소개'와 '최은비' 간격 */
+  display: inline; /* 한 줄로 보이게 설정 */
+}
+.name:hover {
+  cursor: pointer;
+}
 
 .details h2 {
   margin-top: 20px;
@@ -43,18 +48,108 @@ body {
 }
 
 .details p {
-  line-height: 1.8;
+  line-height: 2.0;
   margin: 10px 0;
   color: #005b96;
 }
 
 .details ul {
   padding-left: 20px;
-  line-height: 1.8;
+  line-height: 2.0;
 }
 
-.details ul li {
-  margin-bottom: 5px;
-  color: #2e4a62;
+.details {
+  line-height: 2.0;
+}
+.jjanggu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; 
 }
 
+.profile-picture-container {
+  margin-right: 20px; /* 사진과 짱구 사이 간격 */
+}
+
+.profile-picture {
+  width: 350px;
+  height: 350px;
+  border-radius: 20%;
+  object-fit: cover;
+  border: 2px solid #4682b4;
+}
+
+.jjanggu {
+  width: 150px;
+  height: auto;
+}
+
+.jjanggu-container:hover .jjanggu {
+  animation: dance 0.5s infinite alternate;
+}
+
+#heart-container {
+  text-align: left;
+  margin-left: 200px ;
+}
+
+#heart {
+  font-size: 2em;
+  color: black;
+  cursor: pointer;
+}
+
+#scroll-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+@keyframes dance {
+  0% {
+      transform: rotate(0deg) translateY(0);
+  }
+  50% {
+      transform: rotate(10deg) translateY(-10px);
+  }
+  100% {
+      transform: rotate(-10deg) translateY(-10px);
+  }
+} 
+
+.email-section {
+  margin-top: 20px;
+}
+
+.email-section label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.email-section input,
+.email-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.email-section button {
+  padding: 10px 20px;
+  background-color: #4682b4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.email-section button:hover {
+  background-color: #005b96;
+}
