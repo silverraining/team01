@@ -57,8 +57,18 @@ body {
   너무 딱딱한 직각 느낌에서 벗어나려고 border radius를 추가하였습니다. */
 }
 
+<<<<<<< Updated upstream
 #name-hiden {
   display: none;
+=======
+
+.display-hiden{
+    display: none;
+}
+
+/* #name-hiden{
+    display: none;
+>>>>>>> Stashed changes
 }
 
 #mbti-hiden {
@@ -81,9 +91,15 @@ body {
   display: none;
 }
 
+<<<<<<< Updated upstream
 #birthday-hiden {
   display: none;
 }
+=======
+#birthday-hiden{
+    display: none;
+} */
+>>>>>>> Stashed changes
 
 .name-txt-hide {
   filter: blur(2px);
