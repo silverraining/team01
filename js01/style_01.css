@@ -9,14 +9,17 @@
 body {
   background: rgb(240, 240, 240);
 }
+button {
+  cursor: pointer;
+}
 
 .wrapper {
   padding: 10px 10px;
 }
-
-button {
-  cursor: pointer;
+.title {
+  margin-bottom: 20px;
 }
+
 .buttons {
   display: flex;
   gap: 10px;
@@ -63,4 +66,8 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.button-action {
+  background: rgb(95, 107, 214);
 }
