@@ -21,11 +21,10 @@
 
 
 let money = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;    /* 현재 가지고 있는 돈 random */
-money(1, 1000000) /* 돈 범위 */
 
 function solution(money) {
     let answer = [];
     return answer;
 }
 
-solution(money);
+solution(money(1, 1000000));  /* 돈 범위 */
