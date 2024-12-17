@@ -60,6 +60,9 @@ btnLeft.addEventListener("click", () => {
   iframeContext.classList.add(String(page));
   iframeContext.src = problems[page].url;
   title.textContent = problems[page].title;
+
+  btns.forEach((i) => i.classList.remove("button-action"));
+  btns[0].classList.add("button-action");
 });
 
 btnRight.addEventListener("click", () => {
@@ -70,6 +73,9 @@ btnRight.addEventListener("click", () => {
   iframeContext.classList.add(String(page));
   iframeContext.src = problems[page].url;
   title.textContent = problems[page].title;
+
+  btns.forEach((i) => i.classList.remove("button-action"));
+  btns[0].classList.add("button-action");
 });
 
 const btnPro = document.querySelector(".pro");
