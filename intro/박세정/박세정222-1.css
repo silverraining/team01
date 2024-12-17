@@ -37,9 +37,8 @@ h1 {
     width: 1200px;
     padding: 10px;
     font-family: Orbit;
-    display: flex;
     flex-direction: row;
-    justify-content: center;
+    text-align: center;
 }
 
 h2 {
