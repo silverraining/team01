@@ -67,3 +67,7 @@ button {
   justify-content: center;
   align-items: center;
 }
+
+.button-action {
+  background: rgb(95, 107, 214);
+}
