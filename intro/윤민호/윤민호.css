@@ -1,13 +1,14 @@
-body{
-    font-family: "Gothic A1", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    min-height: 1300px;
-    background-repeat: no-repeat;
-    background: linear-gradient(0deg, snow, rgb(109, 113, 162));
-    margin: 0;  
+body {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  min-height: 1800px;
+  /* 여백과 마진을 추가하여 세로 길이가 늘어났기 때문에 수정하였습니다. */
+  background-repeat: no-repeat;
+  background: linear-gradient(0deg, snow, rgb(109, 113, 162));
+  margin: 0;
 }
-  
+
 .snow {
   position: absolute;
   width: 5px;
@@ -17,71 +18,87 @@ body{
   box-shadow: 0 0 3px 3px white;
 }
 
-#cont{
-    width: 100%;
-    height: 1300px;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#cont {
+  width: 100%;
+  height: 1800px;
+  /* 여백과 마진을 추가하여 세로 길이가 늘어났기 때문에 수정하였습니다. */
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.txt-box-fl{
-    display: flex;
-    flex-direction: column;
+.txt-box-fl {
+  display: flex;
+  flex-direction: column;
 }
 
-.txt-box{
-    width: 200px;
+.txt-box {
+  width: 200px;
+}
+.txt-box > p {
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  /* 타이틀과 박스 본문 텍스트 폰트사이즈가 동일하여 타이틀로 나누는것이 의미가 없는듯 하여 사이즈를 키우고 font-weight을 준 다음, 가독성을 위해 박스 사이의 마진을 추가하였습니다. */
 }
 
-.txt-box-bor{
-    width: 600px;
-    border: 1px solid black;
-    height: 100px;
-    margin-bottom: 20px;
-    padding: 10px;
+.txt-box-bor {
+  width: 600px;
+  border: 1px solid black;
+  height: 100px;
+  margin-bottom: 50px;
+  padding: 20px;
+  /* 여백이 부족한듯 하여 패딩값과 margin-bottom을 늘려보았습니다. */
+  background-color: white;
+  opacity: 0.6;
+  border-radius: 20px;
+  /* 바탕화면 컬러와 눈이 떨어지는 이펙트가 가독성을 떨어트려 백그라운드 컬러를 추가하고, 
+  너무 딱딱한 직각 느낌에서 벗어나려고 border radius를 추가하였습니다. */
 }
 
-#name-hiden{
-    display: none;
+#name-hiden {
+  display: none;
 }
 
-#mbti-hiden{
-    display: none;
+#mbti-hiden {
+  display: none;
 }
 
-#sing-hiden{
-    display: none;
+#sing-hiden {
+  display: none;
 }
 
-#movie-hiden{
-    display: none;
+#movie-hiden {
+  display: none;
 }
 
-#food-hiden{
-    display: none;
+#food-hiden {
+  display: none;
 }
 
-#home-hiden{
-    display: none;
+#home-hiden {
+  display: none;
 }
 
-#birthday-hiden{
-    display: none;
+#birthday-hiden {
+  display: none;
 }
 
-.name-txt-hide{
-    filter : blur(2px);
-    text-decoration : line-through;
+.name-txt-hide {
+  filter: blur(2px);
+  text-decoration: line-through;
 }
 
-p{
-    font-size: 20px;
-    margin: 0;
-    line-height: 30px;
+p {
+  font-size: 20px;
+  margin: 0;
+  line-height: 30px;
 }
 
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
+  font-size: 62px;
+  font-weight: 900;
+  /* 페이지 상단 타이틀인 만큼 폰트 사이즈를 키웠습니다. */
 }
