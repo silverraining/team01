@@ -1,10 +1,12 @@
 //(1) import 하기
 import { 정한샘 } from './data/정한샘.js';
+import { 최은비 } from './data/최은비.js';
 
 const dataset = [];
 
 //(2) data 추가하기
 dataset.push(...정한샘);
+dataset.push(...최은비);
 
 const note = document.querySelector(".wrapper");
 let notes = "";
