@@ -5,9 +5,9 @@
 
 // 빈칸을 채워서 콜백함수를 완성해주세요
 function Hello(name, callback) {
-    const hi = '안녕하세요 내 이름은 ' + name + ' 입니다.';
-    
-    빈칸(hi);
+  const hi = "안녕하세요 내 이름은 " + name + " 입니다.";
+
+  빈칸(hi);
 }
 
-Hello("민호", (name) => console.log(name)) // 안녕하세요 내 이름은 민호 입니다.;
+Hello("민호", (name) => console.log(name)); // 안녕하세요 내 이름은 민호 입니다.;
