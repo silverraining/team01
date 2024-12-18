@@ -2,6 +2,7 @@
 import { 정한샘 } from "./data/정한샘.js";
 import { 최은비 } from "./data/최은비.js";
 import { 민지영 } from "./data/민지영.js";
+import { 윤민호 } from "./data/윤민호.js";
 
 const dataset = [];
 
@@ -9,6 +10,7 @@ const dataset = [];
 dataset.push(...정한샘);
 dataset.push(...최은비);
 dataset.push(...민지영);
+dataset.push(...윤민호);
 
 const note = document.querySelector(".wrapper");
 let notes = "";
