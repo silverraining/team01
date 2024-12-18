@@ -31,8 +31,12 @@
 
 body {
   height: 100dvh;
+
+  background-position: center;
   background-color: var(--black-100);
   background-image: url("img/noise-50.avif");
+  background-repeat: repeat;
+
   color: var(--white);
 
   display: flex;
