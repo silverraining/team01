@@ -4,6 +4,7 @@ import { 최은비 } from "./data/최은비.js";
 import { 민지영 } from "./data/민지영.js";
 import { 윤민호 } from "./data/윤민호.js";
 import { 박세정 } from "./data/박세정.js";
+import { 김희성 } from "./data/김희성.js";
 
 const dataset = [];
 
@@ -13,6 +14,7 @@ dataset.push(...최은비);
 dataset.push(...민지영);
 dataset.push(...윤민호);
 dataset.push(...박세정);
+dataset.push(...김희성);
 
 const note = document.querySelector(".wrapper");
 let notes = "";
