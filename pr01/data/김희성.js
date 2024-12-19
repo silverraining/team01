@@ -6,8 +6,8 @@ export const 김희성 = [];
   title: "refactor : 1팀 김희성 → 신진호 #69",
   refactors: [
     {
-      prLink: "https://github.com/Ripponcheese/FS-05-team2/pull/69#event-15681413040",
-      prNumber: 48,
+      prLink: "https://github.com/Ripponcheese/FS-05-team2/pull/69",
+      prNumber: 69,
       details: [
         {
           detail:  `<br>
@@ -31,7 +31,7 @@ export const 김희성 = [];
   refactors: [
     {
       prLink: "https://github.com/BBong99/team3/pull/46",
-      prNumber: 76,
+      prNumber: 46,
       details: [
         {
           detail:  `<br>
