@@ -7,13 +7,11 @@ function add(a, b) {
   return a + b;
 }
 
-
 (2)
 function isEven(num) {
   if(num % 2 === 0) return true;
   return false;
 }
-
 
 (3)
 function createPerson(name, age) {
